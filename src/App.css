@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: blueviolet;
+  background-color: #659dbd;
   height: 100vh;
   width: 100vw;
  
@@ -43,8 +43,8 @@
 }
 .searchbox-container{
   position: absolute;
-  top: 40%;
-  left: 33%;
+  top: 45%;
+  left: 34%;
 
 }
 
@@ -57,6 +57,7 @@
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: medium;
   box-sizing:border-box;
+  border: 0px;
   padding-left: 1.5rem;
   
 }
@@ -76,5 +77,18 @@
 }
 .loading-status{
   color: aquamarine;
-  margin-left: 250px;
+  margin-left: 180px;
+  margin-bottom: 50px;
+}
+
+.movie-results-background{
+  background-color:#659dbd;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  padding: 50px;
+  position: fixed;
+}
+.movie-result-content{
+  margin-right: 30px;
 }

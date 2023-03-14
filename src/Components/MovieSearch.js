@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from 'react';
 import axios from 'axios';
 import { color } from '@mui/system';
+import Spinner from './Spinner';
 export const MovieSearch = () => {
 
    const[loading,setLoading]=useState(false)
@@ -35,11 +36,9 @@ export const MovieSearch = () => {
             <SearchIcon className='search-icon' sx={{ fontSize: 30 ,fontWeight:500}}></SearchIcon>
             </div>
             {loading && 
-            <p className='loading-status'>
-                loading.........
-            </p>}
-            
-
+            <div className='loading-status'>
+               <Spinner/>
+            </div>}
         </div>
     </div>
     
